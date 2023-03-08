@@ -8,7 +8,7 @@
         
         
         <link rel="shortcut icon" href="../img/favicon.ico">
-        <title>Tutorial - My Docs</title>
+        <title>Markdown - TAREAS PAGES GITHUB</title>
         <link href="../css/bootstrap.min.css" rel="stylesheet">
         <link href="../css/font-awesome.min.css" rel="stylesheet">
         <link href="../css/base.css" rel="stylesheet">
@@ -23,7 +23,7 @@
     <body>
         <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
             <div class="container">
-                <a class="navbar-brand" href="..">My Docs</a>
+                <a class="navbar-brand" href="..">TAREAS PAGES GITHUB</a>
                 <!-- Expander button -->
                 <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
                     <span class="navbar-toggler-icon"></span>
@@ -36,8 +36,14 @@
                             <li class="navitem">
                                 <a href=".." class="nav-link">Home</a>
                             </li>
+                            <li class="navitem">
+                                <a href="../Git_y_Github/" class="nav-link">GitHub</a>
+                            </li>
                             <li class="navitem active">
-                                <a href="./" class="nav-link">Tutorial</a>
+                                <a href="./" class="nav-link">Markdown</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../GitHub_Pages_Mkdown/" class="nav-link">GitHub y Markdown</a>
                             </li>
                         </ul>
 
@@ -48,12 +54,12 @@
                             </a>
                         </li>
                             <li class="nav-item">
-                                <a rel="prev" href=".." class="nav-link">
+                                <a rel="prev" href="../Git_y_Github/" class="nav-link">
                                     <i class="fa fa-arrow-left"></i> Previous
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a rel="next" class="nav-link disabled">
+                                <a rel="next" href="../GitHub_Pages_Mkdown/" class="nav-link">
                                     Next <i class="fa fa-arrow-right"></i>
                                 </a>
                             </li>
@@ -75,9 +81,25 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-light">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-level="1"><a href="#tutorial" class="nav-link">Tutorial</a>
+            <li class="nav-item" data-level="1"><a href="#markdown" class="nav-link">Markdown</a>
               <ul class="nav flex-column">
-            <li class="nav-item" data-level="2"><a href="#nuevo-pagina-de-tutorial" class="nav-link">Nuevo página de Tutorial</a>
+            <li class="nav-item" data-level="2"><a href="#1-introduccion" class="nav-link">1. Introducción</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#2-utilizacion" class="nav-link">2. Utilización</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#3-basico" class="nav-link">3. Básico</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#4-tareas" class="nav-link">4. Tareas</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#5-enlaces" class="nav-link">5. Enlaces</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -88,9 +110,80 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<h1 id="tutorial">Tutorial</h1>
-<h2 id="nuevo-pagina-de-tutorial">Nuevo página de Tutorial</h2>
-<p>Nuevo pagina añadido</p></div>
+<h1 id="markdown">Markdown</h1>
+<ol>
+<li>Introducción</li>
+<li>Utilización</li>
+<li>Básico</li>
+<li>Tareas</li>
+<li>Enlaces</li>
+</ol>
+<h2 id="1-introduccion">1. Introducción</h2>
+<pre><code>Markdown[9] is a lightweight markup language for creating formatted text using a plain-text editor.
+John Gruber and Aaron Swartz created Markdown in 2004 as a markup language that is appealing to
+human readers in its source code form.
+Its key design goal was readability, that the language be readable as-is,
+Ojo con las versiones. Por ejemplo la de GitHub nos dice:
+1.1What is GitHub Flavored Markdown?
+GitHub Flavored Markdown, often shortened as GFM, is the dialect of Markdown that is currently
+supported for user content on GitHub.com and GitHub Enterprise.
+This formal specification, based on the CommonMark Spec, defines the syntax and semantics of this
+dialect.
+GFM is a strict superset of CommonMark. All the features which are supported in GitHub user
+content and that are not specified on the original CommonMark Spec are hence known as
+extensions, and highlighted as such.
+While GFM supports a wide range of inputs, it’s worth noting that GitHub.com and GitHub Enterprise
+perform additional post-processing and sanitization after GFM is converted to HTML to ensure
+security and consistency of the website.
+</code></pre>
+<h2 id="2-utilizacion">2. Utilización</h2>
+<pre><code>Documentación (permite control de versiones)
+GitHub (publica directamente en formato Markdown) o en GitHub Pages usando mkdocs
+Mapas (markmap)
+Presentaciones (marp)
+</code></pre>
+<h2 id="3-basico">3. Básico</h2>
+<pre><code>En general debe ser suficiente este conjunto de marcas:
+Cabeceras de nivel
+Párrafos
+Citas
+Listas
+</code></pre>
+<p>02 _markdown.md 23 / 2 / 2023</p>
+<pre><code>/
+Enlaces
+Imágenes
+Código
+Bloques de código
+Separadores
+strong / em
+Y puede ampliar con otras marcas:
+Tablas
+Listas de tareas
+emoticonos
+</code></pre>
+<h2 id="4-tareas">4. Tareas</h2>
+<pre><code>Crear documento Markdown. Incluir distintos tipos de marcas.
+Ampliar: añadir plugins VScode. Intentar numeración de secciones/cabeceras, añadir tabla de
+contenidos o imprimir a PDF.
+Ampliar: añadir plugin VScode. Crear esquema que se traduce a mapa (markmap)
+</code></pre>
+<h2 id="5-enlaces">5. Enlaces</h2>
+<pre><code>Markdown original: https://daringfireball.net/projects/markdown/basics
+CommonMark Spec: https://spec.commonmark.org/0.30/
+Github Markdown: https://github.github.com/gfm/#what-is-github-flavored-markdown y
+Markmap: https://markmap.js.org/repl
+Marp: https://marp.app/
+VScode plugins:
+Markmap:https://marketplace.visualstudio.com/items?itemName=gera2ld.markmap-vscode
+Marp: https://marketplace.visualstudio.com/items?itemName=marp-team.marp-vscode
+MD All in One: https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-
+in-one
+Markdown to PDF: https://marketplace.visualstudio.com/items?itemName=yzane.markdown-
+pdf
+Typora: https://typora.io/
+</code></pre>
+<p>This is a offline tool, your data stays locally and is not send to any server!</p></div>
             </div>
         </div>
 

@@ -4,26 +4,26 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="None">
         
         
-        <link rel="shortcut icon" href="img/favicon.ico">
-        <title>TAREAS PAGES GITHUB</title>
-        <link href="css/bootstrap.min.css" rel="stylesheet">
-        <link href="css/font-awesome.min.css" rel="stylesheet">
-        <link href="css/base.css" rel="stylesheet">
+        
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>GitHub y Markdown - TAREAS PAGES GITHUB</title>
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
 
-        <script src="js/jquery-1.10.2.min.js" defer></script>
-        <script src="js/bootstrap.min.js" defer></script>
+        <script src="../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../js/bootstrap.min.js" defer></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
         <script>hljs.initHighlightingOnLoad();</script> 
     </head>
 
-    <body class="homepage">
+    <body>
         <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
             <div class="container">
-                <a class="navbar-brand" href=".">TAREAS PAGES GITHUB</a>
+                <a class="navbar-brand" href="..">TAREAS PAGES GITHUB</a>
                 <!-- Expander button -->
                 <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
                     <span class="navbar-toggler-icon"></span>
@@ -33,17 +33,17 @@
                 <div id="navbar-collapse" class="navbar-collapse collapse">
                         <!-- Main navigation -->
                         <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href=".." class="nav-link">Home</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../Git_y_Github/" class="nav-link">GitHub</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../Markdown/" class="nav-link">Markdown</a>
+                            </li>
                             <li class="navitem active">
-                                <a href="." class="nav-link">Home</a>
-                            </li>
-                            <li class="navitem">
-                                <a href="Git_y_Github/" class="nav-link">GitHub</a>
-                            </li>
-                            <li class="navitem">
-                                <a href="Markdown/" class="nav-link">Markdown</a>
-                            </li>
-                            <li class="navitem">
-                                <a href="GitHub_Pages_Mkdown/" class="nav-link">GitHub y Markdown</a>
+                                <a href="./" class="nav-link">GitHub y Markdown</a>
                             </li>
                         </ul>
 
@@ -54,12 +54,12 @@
                             </a>
                         </li>
                             <li class="nav-item">
-                                <a rel="prev" class="nav-link disabled">
+                                <a rel="prev" href="../Markdown/" class="nav-link">
                                     <i class="fa fa-arrow-left"></i> Previous
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a rel="next" href="Git_y_Github/" class="nav-link">
+                                <a rel="next" class="nav-link disabled">
                                     Next <i class="fa fa-arrow-right"></i>
                                 </a>
                             </li>
@@ -81,9 +81,21 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-light">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-level="1"><a href="#lmsgi-lenguaje-de-marca" class="nav-link">LMSGI - LENGUAJE DE MARCA</a>
+            <li class="nav-item" data-level="1"><a href="#github-pages-y-mkdocs" class="nav-link">GitHub Pages y mkdocs</a>
               <ul class="nav flex-column">
-            <li class="nav-item" data-level="2"><a href="#github-pages" class="nav-link">GITHUB PAGES</a>
+            <li class="nav-item" data-level="2"><a href="#1-github-pages" class="nav-link">1. GitHub Pages</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#2-mkdocs" class="nav-link">2. mkdocs</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#3-enlaces" class="nav-link">3. Enlaces</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#4-anexo-instalacion-de-mkdocs" class="nav-link">4. Anexo: instalación de mkdocs</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -94,35 +106,69 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<h1 id="lmsgi-lenguaje-de-marca">LMSGI - LENGUAJE DE MARCA</h1>
-<p>En este apartado aprenderemos:</p>
-<ul>
-<li>Cómo crear una cuenta en GitHub.</li>
-<li>Qué es MarkDown y cómo usarlo.</li>
-<li>Cómo crear nuestra propia página de GitHub utilizando Markdown.</li>
-</ul>
-<h2 id="github-pages">GITHUB PAGES</h2>
-<h3 id="mkdocs-project-documentation-with-markdown">MkDocs - Project documentation with Markdown.</h3>
-<hr />
-<ul>
-<li>Options:<ul>
-<li><code>mkdocs -V</code> / <code>mkdocs --version</code>  Show the version and exit.</li>
-<li><code>mkdocs -q</code> / <code>mkdocs --quiet</code>    Silence warnings.</li>
-<li><code>mkdocs -v</code> / <code>mkdocs --verbose</code>  Enable verbose output.</li>
-<li><code>mkdocs -h</code> / <code>mkdocs --help</code>     Print help message and exit.</li>
-</ul>
-</li>
-</ul>
-<hr />
-<ul>
-<li>Commands:<ul>
-<li><code>mkdocs build</code>  -  Build the MkDocs documentation</li>
-<li><code>mkdocs gh-deploy</code>  -  Deploy your documentation to GitHub Pages</li>
-<li><code>mkdocs new [dir-name]</code>  -  Create a new MkDocs project</li>
-<li><code>mkdocs serve</code>  -  Run the builtin development server</li>
-</ul>
-</li>
-</ul></div>
+<h1 id="github-pages-y-mkdocs">GitHub Pages y mkdocs</h1>
+<ol>
+<li>GitHub Pages</li>
+<li>mkdocs</li>
+<li>Enlaces</li>
+<li>Anexo: instalación de mkdocs</li>
+</ol>
+<pre><code>Se supone realizadas las prácticas de uso de GitHub y Markdown.
+</code></pre>
+<h2 id="1-github-pages">1. GitHub Pages</h2>
+<pre><code>GitHub nos da la posibilidad de publicar páginas HTML en el repositorio, por ejemplo la documentación del
+código o del proyecto, etc.
+Para ello
+Crear repo test-demo-pages
+Activar Pages en rama main usando la carpeta docs.
+Clonar repositorio en local.
+Crear directorio docs y añadir y editar fichero index.html con estilos.css.
+Subir los cambios a GitHub y probar la URL que nos indica Pages que será similar a
+http://&lt;usuario&gt;.github.io/&lt;repositorio&gt;
+</code></pre>
+<h2 id="2-mkdocs">2. mkdocs</h2>
+<pre><code>Pasos a dar:
+Instalar mkdocs (requiere python3, pip, uso de venv).
+Usando como guía Getting Started with MkDocs
+Crear proyecto dentro de directorio clonado con mkdocs new misdocs
+Lanzar mkdocs serve para ver cambios en vivo antes de subirlos a GitHub.
+Añadir al menos dos ficheros en formato Markdown.
+Modificar el fichero de configuración para que indexe los tres ficheros.
+Probar a modificar el tema por defecto
+Una vez terminado hacer mkdocs gh-deploy, esperar unos momentos y ver la página en GitHub
+Pages. mkdocs activa Pages y crea una rama de nombre gh-pages donde sube el sitio web
+generado.
+</code></pre>
+<h2 id="3-enlaces">3. Enlaces</h2>
+<pre><code>GitHub Pages: https://docs.github.com/es/pages
+Mkdocs: https://www.mkdocs.org/
+</code></pre>
+<h2 id="4-anexo-instalacion-de-mkdocs">4. Anexo: instalación de mkdocs</h2>
+<pre><code>Debe tener instalado:
+python
+</code></pre>
+<p>03 _pages_mkdocs.md 24 / 2 / 2023</p>
+<pre><code>/
+python-venv
+Creamos un entorno virtual en el repositorio:
+$ python3 -m venv mivenv
+Añadimos el entorno virtual al fichero .gitignore:
+$ echo &quot;mivenv&quot; &gt;&gt; .gitignore
+$ echo &quot;.gitignore&quot; &gt;&gt; .gitignore
+Activamos el entorno virtual
+$ source mivenv/bin/activate
+(mivenv) $
+Instalamos mkdocs con pip:
+(mivenv) $ pip install mkdocs
+...
+(mivenv) $
+Y ya podemos usar mkdocs:
+(mivenv) $ mkdocs new misdocs
+Al terminar:
+(mivenv) $ deactivate
+$
+</code></pre>
+<p>This is a offline tool, your data stays locally and is not send to any server!</p></div>
             </div>
         </div>
 
@@ -131,11 +177,11 @@
             <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
         </footer>
         <script>
-            var base_url = ".",
+            var base_url = "..",
                 shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
         </script>
-        <script src="js/base.js" defer></script>
-        <script src="search/main.js" defer></script>
+        <script src="../js/base.js" defer></script>
+        <script src="../search/main.js" defer></script>
 
         <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
@@ -203,8 +249,3 @@
 
     </body>
 </html>
-
-<!--
-MkDocs version : 1.1.2
-Build Date UTC : 2023-03-08 09:43:21.996042+00:00
--->

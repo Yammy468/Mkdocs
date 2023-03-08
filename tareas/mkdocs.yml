@@ -1,0 +1,7 @@
+site_name: TAREAS PAGES GITHUB
+
+nav:
+    - Home: index.md
+    - GitHub: Git_y_Github.md
+    - Markdown: Markdown.md
+    - GitHub y Markdown: GitHub_Pages_Mkdown.md

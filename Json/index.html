@@ -4,26 +4,26 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="None">
         
         
-        <link rel="shortcut icon" href="img/favicon.ico">
-        <title>TAREAS PAGES GITHUB</title>
-        <link href="css/bootstrap.min.css" rel="stylesheet">
-        <link href="css/font-awesome.min.css" rel="stylesheet">
-        <link href="css/base.css" rel="stylesheet">
+        
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>Json - TAREAS PAGES GITHUB</title>
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
 
-        <script src="js/jquery-1.10.2.min.js" defer></script>
-        <script src="js/bootstrap.min.js" defer></script>
+        <script src="../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../js/bootstrap.min.js" defer></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
         <script>hljs.initHighlightingOnLoad();</script> 
     </head>
 
-    <body class="homepage">
+    <body>
         <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
             <div class="container">
-                <a class="navbar-brand" href=".">TAREAS PAGES GITHUB</a>
+                <a class="navbar-brand" href="..">TAREAS PAGES GITHUB</a>
                 <!-- Expander button -->
                 <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
                     <span class="navbar-toggler-icon"></span>
@@ -33,23 +33,23 @@
                 <div id="navbar-collapse" class="navbar-collapse collapse">
                         <!-- Main navigation -->
                         <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href=".." class="nav-link">Home</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../Git_y_Github/" class="nav-link">GitHub</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../Markdown/" class="nav-link">Markdown</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../GitHub_Pages_Mkdown/" class="nav-link">GitHub y Markdown</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../Yaml/" class="nav-link">Yaml</a>
+                            </li>
                             <li class="navitem active">
-                                <a href="." class="nav-link">Home</a>
-                            </li>
-                            <li class="navitem">
-                                <a href="Git_y_Github/" class="nav-link">GitHub</a>
-                            </li>
-                            <li class="navitem">
-                                <a href="Markdown/" class="nav-link">Markdown</a>
-                            </li>
-                            <li class="navitem">
-                                <a href="GitHub_Pages_Mkdown/" class="nav-link">GitHub y Markdown</a>
-                            </li>
-                            <li class="navitem">
-                                <a href="Yaml/" class="nav-link">Yaml</a>
-                            </li>
-                            <li class="navitem">
-                                <a href="Json/" class="nav-link">Json</a>
+                                <a href="./" class="nav-link">Json</a>
                             </li>
                         </ul>
 
@@ -60,12 +60,12 @@
                             </a>
                         </li>
                             <li class="nav-item">
-                                <a rel="prev" class="nav-link disabled">
+                                <a rel="prev" href="../Yaml/" class="nav-link">
                                     <i class="fa fa-arrow-left"></i> Previous
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a rel="next" href="Git_y_Github/" class="nav-link">
+                                <a rel="next" class="nav-link disabled">
                                     Next <i class="fa fa-arrow-right"></i>
                                 </a>
                             </li>
@@ -87,9 +87,13 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-light">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-level="1"><a href="#lmsgi-lenguaje-de-marca" class="nav-link">LMSGI - LENGUAJE DE MARCA</a>
+            <li class="nav-item" data-level="1"><a href="#json" class="nav-link">JSON</a>
               <ul class="nav flex-column">
-            <li class="nav-item" data-level="2"><a href="#github-pages" class="nav-link">GITHUB PAGES</a>
+            <li class="nav-item" data-level="2"><a href="#1-introduccion" class="nav-link">1. Introducción</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#2-enlaces" class="nav-link">2. Enlaces</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -100,35 +104,69 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<h1 id="lmsgi-lenguaje-de-marca">LMSGI - LENGUAJE DE MARCA</h1>
-<p>En este apartado aprenderemos:</p>
-<ul>
-<li>Cómo crear una cuenta en GitHub.</li>
-<li>Qué es MarkDown y cómo usarlo.</li>
-<li>Cómo crear nuestra propia página de GitHub utilizando Markdown.</li>
-</ul>
-<h2 id="github-pages">GITHUB PAGES</h2>
-<h3 id="mkdocs-project-documentation-with-markdown">MkDocs - Project documentation with Markdown.</h3>
-<hr />
-<ul>
-<li>Options:<ul>
-<li><code>mkdocs -V</code> / <code>mkdocs --version</code>  Show the version and exit.</li>
-<li><code>mkdocs -q</code> / <code>mkdocs --quiet</code>    Silence warnings.</li>
-<li><code>mkdocs -v</code> / <code>mkdocs --verbose</code>  Enable verbose output.</li>
-<li><code>mkdocs -h</code> / <code>mkdocs --help</code>     Print help message and exit.</li>
-</ul>
-</li>
-</ul>
-<hr />
-<ul>
-<li>Commands:<ul>
-<li><code>mkdocs build</code>  -  Build the MkDocs documentation</li>
-<li><code>mkdocs gh-deploy</code>  -  Deploy your documentation to GitHub Pages</li>
-<li><code>mkdocs new [dir-name]</code>  -  Create a new MkDocs project</li>
-<li><code>mkdocs serve</code>  -  Run the builtin development server</li>
-</ul>
-</li>
-</ul></div>
+<h1 id="json">JSON</h1>
+<ol>
+<li>Introducción</li>
+<li>Enlaces</li>
+</ol>
+<h2 id="1-introduccion">1. Introducción</h2>
+<pre><code>Este bloque es parte del temario de 2º curso. Se hace pequeña introducción y poco más.
+El ejemplo de uso más habitual de JSON es en el uso de APIS web. Estas APIS ofrecen su servicios en
+formato JSON o XML. Desde diferentes lenguajes de programación puede lanzar peticiones a estas APIs y
+procesar el resultado.
+Observe un ejemplo muy sencillo de uso una API (ficticia)
+https://jsonplaceholder.typicode.com/users/
+https://jsonplaceholder.typicode.com/todos/
+https://jsonplaceholder.typicode.com/users/
+O esta otra relacionada con &quot;Stars Wars&quot;:
+https://swapi.dev/api/people/1/?format=json
+https://swapi.dev/api/films/3/?format=json
+Puede invocar desde CLI con el comando curl. En la primera API:
+clases@lg:~$ curl https://jsonplaceholder.typicode.com/todos/
+{
+&quot;userId&quot;: 1,
+&quot;id&quot;: 1,
+&quot;title&quot;: &quot;delectus aut autem&quot;,
+&quot;completed&quot;: false
+}clases@lg:~$
+O sobre la segunda API donde:
+hay que especificar el formato de salida (?format=json).
+procesamos la salida para hacerla más legible con json_pp.
+clases@lg:~$ curl -s https://swapi.dev/api/people/2/?format=json | json_pp
+{
+&quot;birth_year&quot; : &quot;112BBY&quot;,
+&quot;created&quot; : &quot;2014-12-10T15:10:51.357000Z&quot;,
+&quot;edited&quot; : &quot;2014-12-20T21:17:50.309000Z&quot;,
+&quot;eye_color&quot; : &quot;yellow&quot;,
+&quot;films&quot; : [
+&quot;https://swapi.dev/api/films/1/&quot;,
+</code></pre>
+<p>05_JSON.md 6/3/</p>
+<pre><code>/
+&quot;https://swapi.dev/api/films/2/&quot;,
+&quot;https://swapi.dev/api/films/3/&quot;,
+&quot;https://swapi.dev/api/films/4/&quot;,
+&quot;https://swapi.dev/api/films/5/&quot;,
+&quot;https://swapi.dev/api/films/6/&quot;
+],
+&quot;gender&quot; : &quot;n/a&quot;,
+&quot;hair_color&quot; : &quot;n/a&quot;,
+&quot;height&quot; : &quot;167&quot;,
+&quot;homeworld&quot; : &quot;https://swapi.dev/api/planets/1/&quot;,
+&quot;mass&quot; : &quot;75&quot;,
+&quot;name&quot; : &quot;C-3PO&quot;,
+....
+}
+clases@lg:~$
+</code></pre>
+<h2 id="2-enlaces">2. Enlaces</h2>
+<pre><code>JSON: http://www.json.org/json-es.html
+Wikipedia: https://es.wikipedia.org/wiki/JSON
+Tutoriales:
+W3Schools JSON: https://www.w3schools.com/js/js_json_intro.asp
+JSON tutorial: https://beginnersbook.com/2015/04/json-tutorial/
+The Star Wars API: https://swapi.dev/
+</code></pre></div>
             </div>
         </div>
 
@@ -137,11 +175,11 @@
             <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
         </footer>
         <script>
-            var base_url = ".",
+            var base_url = "..",
                 shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
         </script>
-        <script src="js/base.js" defer></script>
-        <script src="search/main.js" defer></script>
+        <script src="../js/base.js" defer></script>
+        <script src="../search/main.js" defer></script>
 
         <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
@@ -209,8 +247,3 @@
 
     </body>
 </html>
-
-<!--
-MkDocs version : 1.1.2
-Build Date UTC : 2023-03-14 13:03:07.740818+00:00
--->

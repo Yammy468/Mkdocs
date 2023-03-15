@@ -9,15 +9,15 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>GitHub y Markdown - TAREAS PAGES GITHUB</title>
+  <title>JSON - TAREAS PAGES GITHUB</title>
   <link rel="stylesheet" href="../css/theme.css" />
   <link rel="stylesheet" href="../css/theme_extra.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" />
   
   <script>
     // Current page data
-    var mkdocs_page_name = "GitHub y Markdown";
-    var mkdocs_page_input_path = "GitHub_Pages_Mkdown.md";
+    var mkdocs_page_name = "JSON";
+    var mkdocs_page_input_path = "Json.md";
     var mkdocs_page_url = null;
   </script>
   
@@ -57,26 +57,22 @@
                     <li class="toctree-l1"><a class="reference internal" href="../Markdown/">Markdown</a>
                     </li>
                 </ul>
-                <ul class="current">
-                    <li class="toctree-l1 current"><a class="reference internal current" href="./">GitHub y Markdown</a>
-    <ul class="current">
-    <li class="toctree-l2"><a class="reference internal" href="#1-github-pages">1. GitHub Pages</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#2-mkdocs">2. mkdocs</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#3-enlaces">3. Enlaces</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#4-anexo-instalacion-de-mkdocs">4. Anexo: instalación de mkdocs</a>
-    </li>
-    </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../GitHub_Pages_Mkdown/">GitHub y Markdown</a>
                     </li>
                 </ul>
                 <ul>
                     <li class="toctree-l1"><a class="reference internal" href="../Yaml/">YAML</a>
                     </li>
                 </ul>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../Json/">JSON</a>
+                <ul class="current">
+                    <li class="toctree-l1 current"><a class="reference internal current" href="./">JSON</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#1-introduccion">1. Introducción</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#2-enlaces">2. Enlaces</a>
+    </li>
+    </ul>
                     </li>
                 </ul>
       </div>
@@ -100,7 +96,7 @@
     
       
     
-    <li>GitHub y Markdown</li>
+    <li>JSON</li>
     <li class="wy-breadcrumbs-aside">
       
     </li>
@@ -111,69 +107,69 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="github-pages-y-mkdocs">GitHub Pages y mkdocs</h1>
+                <h1 id="json">JSON</h1>
 <ol>
-<li>GitHub Pages</li>
-<li>mkdocs</li>
+<li>Introducción</li>
 <li>Enlaces</li>
-<li>Anexo: instalación de mkdocs</li>
 </ol>
-<pre><code>Se supone realizadas las prácticas de uso de GitHub y Markdown.
+<h2 id="1-introduccion">1. Introducción</h2>
+<pre><code>Este bloque es parte del temario de 2º curso. Se hace pequeña introducción y poco más.
+El ejemplo de uso más habitual de JSON es en el uso de APIS web. Estas APIS ofrecen su servicios en
+formato JSON o XML. Desde diferentes lenguajes de programación puede lanzar peticiones a estas APIs y
+procesar el resultado.
+Observe un ejemplo muy sencillo de uso una API (ficticia)
+https://jsonplaceholder.typicode.com/users/
+https://jsonplaceholder.typicode.com/todos/
+https://jsonplaceholder.typicode.com/users/
+O esta otra relacionada con &quot;Stars Wars&quot;:
+https://swapi.dev/api/people/1/?format=json
+https://swapi.dev/api/films/3/?format=json
+Puede invocar desde CLI con el comando curl. En la primera API:
+clases@lg:~$ curl https://jsonplaceholder.typicode.com/todos/
+{
+&quot;userId&quot;: 1,
+&quot;id&quot;: 1,
+&quot;title&quot;: &quot;delectus aut autem&quot;,
+&quot;completed&quot;: false
+}clases@lg:~$
+O sobre la segunda API donde:
+hay que especificar el formato de salida (?format=json).
+procesamos la salida para hacerla más legible con json_pp.
+clases@lg:~$ curl -s https://swapi.dev/api/people/2/?format=json | json_pp
+{
+&quot;birth_year&quot; : &quot;112BBY&quot;,
+&quot;created&quot; : &quot;2014-12-10T15:10:51.357000Z&quot;,
+&quot;edited&quot; : &quot;2014-12-20T21:17:50.309000Z&quot;,
+&quot;eye_color&quot; : &quot;yellow&quot;,
+&quot;films&quot; : [
+&quot;https://swapi.dev/api/films/1/&quot;,
 </code></pre>
-<h2 id="1-github-pages">1. GitHub Pages</h2>
-<pre><code>GitHub nos da la posibilidad de publicar páginas HTML en el repositorio, por ejemplo la documentación del
-código o del proyecto, etc.
-Para ello
-Crear repo test-demo-pages
-Activar Pages en rama main usando la carpeta docs.
-Clonar repositorio en local.
-Crear directorio docs y añadir y editar fichero index.html con estilos.css.
-Subir los cambios a GitHub y probar la URL que nos indica Pages que será similar a
-http://&lt;usuario&gt;.github.io/&lt;repositorio&gt;
-</code></pre>
-<h2 id="2-mkdocs">2. mkdocs</h2>
-<pre><code>Pasos a dar:
-Instalar mkdocs (requiere python3, pip, uso de venv).
-Usando como guía Getting Started with MkDocs
-Crear proyecto dentro de directorio clonado con mkdocs new misdocs
-Lanzar mkdocs serve para ver cambios en vivo antes de subirlos a GitHub.
-Añadir al menos dos ficheros en formato Markdown.
-Modificar el fichero de configuración para que indexe los tres ficheros.
-Probar a modificar el tema por defecto
-Una vez terminado hacer mkdocs gh-deploy, esperar unos momentos y ver la página en GitHub
-Pages. mkdocs activa Pages y crea una rama de nombre gh-pages donde sube el sitio web
-generado.
-</code></pre>
-<h2 id="3-enlaces">3. Enlaces</h2>
-<pre><code>GitHub Pages: https://docs.github.com/es/pages
-Mkdocs: https://www.mkdocs.org/
-</code></pre>
-<h2 id="4-anexo-instalacion-de-mkdocs">4. Anexo: instalación de mkdocs</h2>
-<pre><code>Debe tener instalado:
-python
-</code></pre>
-<p>03 _pages_mkdocs.md 24 / 2 / 2023</p>
+<p>05_JSON.md 6/3/</p>
 <pre><code>/
-python-venv
-Creamos un entorno virtual en el repositorio:
-$ python3 -m venv mivenv
-Añadimos el entorno virtual al fichero .gitignore:
-$ echo &quot;mivenv&quot; &gt;&gt; .gitignore
-$ echo &quot;.gitignore&quot; &gt;&gt; .gitignore
-Activamos el entorno virtual
-$ source mivenv/bin/activate
-(mivenv) $
-Instalamos mkdocs con pip:
-(mivenv) $ pip install mkdocs
-...
-(mivenv) $
-Y ya podemos usar mkdocs:
-(mivenv) $ mkdocs new misdocs
-Al terminar:
-(mivenv) $ deactivate
-$
+&quot;https://swapi.dev/api/films/2/&quot;,
+&quot;https://swapi.dev/api/films/3/&quot;,
+&quot;https://swapi.dev/api/films/4/&quot;,
+&quot;https://swapi.dev/api/films/5/&quot;,
+&quot;https://swapi.dev/api/films/6/&quot;
+],
+&quot;gender&quot; : &quot;n/a&quot;,
+&quot;hair_color&quot; : &quot;n/a&quot;,
+&quot;height&quot; : &quot;167&quot;,
+&quot;homeworld&quot; : &quot;https://swapi.dev/api/planets/1/&quot;,
+&quot;mass&quot; : &quot;75&quot;,
+&quot;name&quot; : &quot;C-3PO&quot;,
+....
+}
+clases@lg:~$
 </code></pre>
-<p>This is a offline tool, your data stays locally and is not send to any server!</p>
+<h2 id="2-enlaces">2. Enlaces</h2>
+<pre><code>JSON: http://www.json.org/json-es.html
+Wikipedia: https://es.wikipedia.org/wiki/JSON
+Tutoriales:
+W3Schools JSON: https://www.w3schools.com/js/js_json_intro.asp
+JSON tutorial: https://beginnersbook.com/2015/04/json-tutorial/
+The Star Wars API: https://swapi.dev/
+</code></pre>
               
             </div>
           </div>
@@ -181,10 +177,8 @@ $
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../Yaml/" class="btn btn-neutral float-right" title="YAML">Next <span class="icon icon-circle-arrow-right"></span></a>
       
-      
-        <a href="../Markdown/" class="btn btn-neutral" title="Markdown"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../Yaml/" class="btn btn-neutral" title="YAML"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -210,10 +204,8 @@ $
     <span class="rst-current-version" data-toggle="rst-current-version">
       
       
-        <span><a href="../Markdown/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../Yaml/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
-      
-        <span style="margin-left: 15px"><a href="../Yaml/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>

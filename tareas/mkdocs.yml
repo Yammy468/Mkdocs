@@ -5,3 +5,7 @@ nav:
     - GitHub: Git_y_Github.md
     - Markdown: Markdown.md
     - GitHub y Markdown: GitHub_Pages_Mkdown.md
+    - YAML: Yaml.md
+    - JSON: Json.md
+
+theme: readthedocs

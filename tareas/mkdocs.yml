@@ -1,5 +1,5 @@
 site_name: TAREAS PAGES GITHUB
-
+site_url: https://yammy468.github.io/Mkdocs/
 nav:
     - Home: index.md
     - GitHub: Git_y_Github.md

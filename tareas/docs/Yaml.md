@@ -5,9 +5,9 @@
 3. Ejemplos de uso
     - 3.1. En mkdocs
     - 3.2. En despliegues
-      - 3.2.1. GitHub Action
-      - 3.2.2. Docker compose
-      - 3.2.3. Ansible o Kubernetes
+        - 3.2.1. GitHub Action
+        - 3.2.2. Docker compose
+        - 3.2.3. Ansible o Kubernetes
 4. Enlaces
 
 ## 1. Introducción

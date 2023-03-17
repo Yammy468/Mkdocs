@@ -2,10 +2,10 @@
 
 1. Git: instalación
 2. GitHub
-    2.1. Creación de un repositorio
+    - 2.1. Creación de un repositorio
 3. Acceso Github desde local
-    3.1. Acceso con usuario y PAT ( *personal access token* )
-    3.2. Acceso con ssh
+    - 3.1. Acceso con usuario y PAT ( *personal access token* )
+    - 3.2. Acceso con ssh
 4. Proceso básico
 
 ## 1. Git: instalación
